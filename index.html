@@ -1,14 +1,144 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airbnb clone</title>
     <link rel="stylesheet" href="app.css">
 </head>
-<body>
-    
 
-    <script src="./app.js"></script>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <img src="/images/airbnb.svg" alt="">
+            </div>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="#" class="navbar-item">Hospede em sua acomodação</a></li>
+                    <li><a href="#" class="navbar-item">Hospede uma experiência</a></li>
+                    <li><a href="#" class="navbar-item">Ajuda</a></li>
+                    <li><a href="#" class="navbar-item">Entrar</a></li>
+                    <button class="register">Cadastre-se</button>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="filter-container">
+            <div class="input-container">
+                <span class="input-title">Tipo de propriedade</span>
+
+                <div class="select-box">
+                    <div class="select-box__current" tabindex="1">
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="0" value="1" name="property" checked />
+                            <p class="select-box__input-text">O que você está procurando?</p>
+                        </div>
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="1" value="2" name="property" />
+                            <p class="select-box__input-text">Apartamento</p>
+                        </div>
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="2" value="3" name="property" />
+                            <p class="select-box__input-text">Casa</p>
+                        </div>
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="3" value="4" name="property" />
+                            <p class="select-box__input-text">Chácara</p>
+                        </div>
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="4" value="5" name="property" />
+                            <p class="select-box__input-text">Estúdio</p>
+                        </div>
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="5" value="6" name="property" />
+                            <p class="select-box__input-text">Loft</p>
+                        </div>
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="6" value="7" name="property" />
+                            <p class="select-box__input-text">Quarto</p>
+                        </div>
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="7" value="8" name="property" />
+                            <p class="select-box__input-text">Sítio</p>
+                        </div>
+                    </div>
+                    <ul class="select-box__list">
+                        <li>
+                            <label class="select-box__option" for="0" aria-hidden="aria-hidden">O que você está procurando?</label>
+                        </li>
+                        <li>
+                            <label class="select-box__option" for="1" aria-hidden="aria-hidden">Apartamento</label>
+                        </li>
+                        <li>
+                            <label class="select-box__option" for="2" aria-hidden="aria-hidden">Casa</label>
+                        </li>
+                        <li>
+                            <label class="select-box__option" for="3" aria-hidden="aria-hidden">Chácara</label>
+                        </li>
+                        <li>
+                            <label class="select-box__option" for="4" aria-hidden="aria-hidden">Estúdio</label>
+                        </li>
+                        <li>
+                            <label class="select-box__option" for="5" aria-hidden="aria-hidden">Loft</label>
+                        </li>
+                        <li>
+                            <label class="select-box__option" for="6" aria-hidden="aria-hidden">Quarto</label>
+                        </li>
+                        <li>
+                            <label class="select-box__option" for="7" aria-hidden="aria-hidden">Sítio</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class="input-container">
+                <span class="input-title">Check-in/Check-out</span>
+                <input id="checkin_checkout" type="text" placeholder="Insira as datas">
+            </div>
+            <div class="input-container">
+                <span class="input-title">Hóspedes</span>
+                <input id="guests" type="text" placeholder="Insira o número de hóspedes">
+            </div> -->
+            <button class="search">
+                <img src="/images/search.svg" alt="" class="icon-search">
+                <span>Buscar</span>
+            </button>
+        </div>
+
+        <div class="cards-container"></div>
+
+        <button class="load-more">Carregar mais</button>
+
+        <footer class="footer">
+            <p>&copy; Airbnb Clone, desenvolvido por Guilherme Guimarães Galli.</p>
+            <ul class="socials">
+                <li>
+                    <a href="https://github.com/ggalli" target="_blank">
+                        <img src="/images/github.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/guilherme-galli/" target="_blank">
+                        <img src="/images/linkedin.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/guiggalli/" target="_blank">
+                        <img src="/images/instagram.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <div class="loading-container">
+            <svg id="load" x="0px" y="0px" viewBox="0 0 150 150">
+                <circle id="loading-inner" cx="75" cy="75" r="60" />
+            </svg>
+        </div>
+    </div>
+
+    <script src="/app.js"></script>
 </body>
+
 </html>
